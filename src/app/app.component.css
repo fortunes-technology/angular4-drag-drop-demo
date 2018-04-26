@@ -35,3 +35,11 @@ h4 {
     padding-left: 15px;
     
   }
+
+  .cell-background {
+      background-color: green;
+      color: white;
+  }
+  .red-background {
+      background-color: red;
+  }

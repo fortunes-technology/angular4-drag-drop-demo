@@ -63,7 +63,7 @@ export class AppComponent {
       }
     }
     private done() {
-      if (this.simpleList[1].length < 5) {
+      if (this.simpleList[1].length !== 10) {
         alert('You need to select at least 10 items');
         return;
       }
@@ -87,5 +87,11 @@ export class AppComponent {
     }
     public removeItem(item: any, list: any[]): void {
       list.splice(list.indexOf(item), 1);
-    }    
+    }
+    public classForItem(i) {
+      if (i === 0) {
+        return ['red-background'];
+      }
+      return [];
+    }
 }
